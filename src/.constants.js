@@ -1,13 +1,13 @@
 module.exports = Object.freeze({
-  TOKEN: 'bot_token',
-  ARIA_SECRET: 'aria2_secret',
+  TOKEN: '1054372305:AAF91XzIg9de-tLfeD05U6CToKuA01psE-w',
+  ARIA_SECRET: 'pronoob',
   ARIA_DOWNLOAD_LOCATION: '/home/user/path/to/download/dir (no trailing "/")',
   ARIA_DOWNLOAD_LOCATION_ROOT: '/', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION
-  ARIA_FILTERED_DOMAINS: ['yts', 'YTS', 'cruzing.xyz', 'eztv.ag', 'YIFY', 'HDCAM', 'CAMRIP', '1xbet', 'preDVD', 'predvdrip', '.php', '.html'], // Prevent downloading from URLs containing these substrings
-  ARIA_FILTERED_FILENAMES: ['YIFY', 'HDCAM', 'CAMRIP', '1xbet', 'preDVD', 'predvdrip', '.php', '.html'], // Files/top level directories with these substrings in the filename won't be downloaded
+  ARIA_FILTERED_DOMAINS: [], // Prevent downloading from URLs containing these substrings
+  ARIA_FILTERED_FILENAMES: [], // Files/top level directories with these substrings in the filename won't be downloaded
   ARIA_PORT: 8210, // Port for aria2c RPC server, if you change this here, make sure to update aria.sh as well
   INDEX_DOMAIN: 'https://gd.abc.workers.dev/', //Get it from here https://gdindex-code-builder.glitch.me/
-  GDRIVE_PARENT_DIR_ID: 'id_of_Drive_folder_to_upload_into',
+  GDRIVE_PARENT_DIR_ID: '13z5zCp5XR-XdyT50HdJDr84IzdroF-lE',
   SUDO_USERS: [012, 345],	// Telegram user IDs. These users can use the bot in any chat.
   AUTHORIZED_CHATS: [678, 901],	// Telegram chat IDs. Anyone in these chats can use the bot.
   STATUS_UPDATE_INTERVAL_MS: 12000, // A smaller number will update faster, but might cause rate limiting
@@ -23,7 +23,7 @@ module.exports = Object.freeze({
   },
   COMMANDS_USE_BOT_NAME: {
     ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command
-    NAME: "@nameOf_bot"
+    NAME: "@eviluploader_bot"
   },
-  IS_TEAM_DRIVE: false
+  IS_TEAM_DRIVE: true 
 });
